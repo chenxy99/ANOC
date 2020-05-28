@@ -1,4 +1,4 @@
-ANOC
+Attention for Novel Object Captioning (ANOC)
 =====================================
 
 Baseline model for [`nocaps`][1] benchmark, a re-implementation based on the
