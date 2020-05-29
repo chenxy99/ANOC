@@ -1,6 +1,25 @@
 Attention for Novel Object Captioning (ANOC)
 =====================================
 
+This code implements the Attention for Novel Object Captioning (ANOC)
+
+Reference
+------------------
+If you use our code or data, please cite our paper:
+```text
+Anonymous submission for ECCV 2020, paper ID 865.
+```
+
+Disclaimer
+------------------
+We adopt the official implementation of the [`nocaps`](https://github.com/nocaps-org/updown-baseline) as a baseline model for novel object captioning. We use the bottom-up features provided in this repository. Please refer to these links for further README information.
+
+Requirements
+------------------
+1. Requirements for Pytorch. We use Pytorch 1.1.0 in our experiments.
+2. Requirements for Tensorflow. We only use the tensorboard for visualization.
+3. Python 3.6+ (for most of our experiments)
+
 Baseline model for [`nocaps`][1] benchmark, a re-implementation based on the
 [UpDown image captioning model trained on the COCO dataset (only)](https://github.com/peteanderson80/up-down-captioner),
 and with added support of decoding using [Constrained Beam Search][8].
