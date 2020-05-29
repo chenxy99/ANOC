@@ -30,7 +30,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train.py --config configs/updown_plus_cbs_
 
 If you would like to train with SCST, you can base on the previous best result and execute the following script
 ```text
-CUDA_VISIBLE_DEVICES=0 python  scripts/train_scst.py --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
+CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
 --config-override OPTIM.BATCH_SIZE 50 OPTIM.LR 0.00005 OPTIM.NUM_ITERATIONS 210000 --checkpoint-every 3000 \
 --gpu-ids 0 --serialization-dir checkpoints/anoc_scst \
 --start-from-checkpoint checkpoints/anoc/checkpoint_best.pth
