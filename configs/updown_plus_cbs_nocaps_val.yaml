@@ -1,21 +1,21 @@
 RANDOM_SEED: 0
 
 DATA:
-  VOCABULARY: /home/xianyu/nocaps_data/vocabulary
-  TRAIN_FEATURES: /home/xianyu/nocaps_data/coco_val2017_vg_detector_features_adaptive.h5
-  INFER_FEATURES: /home/xianyu/nocaps_data/nocaps_val_vg_detector_features_adaptive.h5
-  TRAIN_PENULTIMATE_FEATURES: /home/xianyu/nocaps_data/penultimate_features_mean/coco/coco_val2017_penultimate_features.h5
-  INFER_PENULTIMATE_FEATURES: /home/xianyu/nocaps_data/penultimate_features_mean/nocaps/nocaps_val_penultimate_features.h5
+  VOCABULARY: ../data/nocaps_data/vocabulary
+  TRAIN_FEATURES: ../data/nocaps_data/coco_val2017_vg_detector_features_adaptive.h5
+  INFER_FEATURES: ../data/nocaps_data/nocaps_val_vg_detector_features_adaptive.h5
+  TRAIN_PENULTIMATE_FEATURES: ../data/nocaps_data/penultimate_features_mean/coco/coco_val2017_penultimate_features.h5
+  INFER_PENULTIMATE_FEATURES: ../data/nocaps_data/penultimate_features_mean/nocaps/nocaps_val_penultimate_features.h5
 
-  TRAIN_CAPTIONS: /home/xianyu/nocaps_data/coco/captions_val2017.json
-  INFER_CAPTIONS: /home/xianyu/nocaps_data/nocaps/nocaps_val_image_info.json
+  TRAIN_CAPTIONS: ../data/nocaps_data/coco/captions_val2017.json
+  INFER_CAPTIONS: ../data/nocaps_data/nocaps/nocaps_val_image_info.json
 
   MAX_CAPTION_LENGTH: 20
 
   CBS:
-    INFER_BOXES: /home/xianyu/nocaps_data/nocaps_val_oi_detector_boxes.json
-    CLASS_HIERARCHY: /home/xianyu/nocaps_data/cbs/class_hierarchy.json
-    WORDFORMS: /home/xianyu/nocaps_data/cbs/constraint_wordforms.tsv
+    INFER_BOXES: ../data/nocaps_data/nocaps_val_oi_detector_boxes.json
+    CLASS_HIERARCHY: ../data/nocaps_data/cbs/class_hierarchy.json
+    WORDFORMS: ../data/nocaps_data/cbs/constraint_wordforms.tsv
 
     MAX_GIVEN_CONSTRAINTS: 3
     MAX_WORDS_PER_CONSTRAINT: 3
