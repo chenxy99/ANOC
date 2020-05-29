@@ -18,7 +18,7 @@ Requirements
 ------------------
 1. Requirements for Pytorch. We use Pytorch 1.1.0 in our experiments.
 2. Requirements for Tensorflow. We only use the tensorboard for visualization.
-3. Python 3.6+ (for most of our experiments)
+3. Python 3.6+
 
 Datasets
 ------------------
