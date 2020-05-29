@@ -39,7 +39,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
 --serialization-dir checkpoints/anoc
 ```
 
-For visualization, on can use tensorboard to check the performance on the `nocaps` validation set.
+For visualization, one can use tensorboard to check the performance on the `nocaps` validation set and monitor the training process.
 ```text
 tensorboard --logdir checkpoints/anoc
 ```
@@ -63,6 +63,16 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py
 --gpu-ids 0 \
 --serialization-dir checkpoints/anoc_scst \
 --start-from-checkpoint checkpoints/anoc/checkpoint_best.pth
+```
+
+Similarly, one can use the tensorboard to monitor the performance and the training procedure. To check the specific parameters of the model on the validation, e.g., `checkpoint_120000.pth`, you can execute the following scripts.
+```text
+CUDA_VISIBLE_DEVICES=0 python scripts/inference_scst.py \
+--config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
+--checkpoint-path checkpoints/anoc_scst/checkpoint_120000.pth \
+--output-path checkpoints/anoc_scst/val_predictions.json \
+--gpu-ids 0 \
+--evalai-submit
 ```
 
 Results for `nocaps` validation set
