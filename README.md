@@ -30,13 +30,28 @@ This extra human saliency data for `COCO` and `nocaps` dataset is extract from [
 
 ANOC
 ------------------
-The program can be executed by
+For training without SCST, you can execute the following scripts
 ```text
 CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
 --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
 --checkpoint-every 1000 \
 --gpu-ids 0 \
 --serialization-dir checkpoints/anoc
+```
+
+For visualization, on can use tensorboard to check the performance on the `nocaps` validation set.
+```text
+tensorboard --logdir checkpoints/anoc
+```
+
+To check the specific parameters of the model on the validation, e.g., `checkpoint_60000.pth`, you can execute the following scripts.
+```text
+CUDA_VISIBLE_DEVICES=0 python scripts/inference.py \
+--config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
+--checkpoint-path checkpoints/anoc/checkpoint_60000.pth \
+--output-path checkpoints/anoc/val_predictions.json \
+--gpu-ids 0 \
+--evalai-submit
 ```
 
 If you would like to train with SCST, you can base on the previous best result and execute the following script
