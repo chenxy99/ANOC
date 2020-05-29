@@ -44,7 +44,7 @@ For visualization, one can use tensorboard to check the performance on the `noca
 tensorboard --logdir checkpoints/anoc
 ```
 
-To check the specific parameters of the model on the validation, e.g., `checkpoint_60000.pth`, you can execute the following scripts.
+To check the specific parameters of the model on the validation set, e.g., `checkpoint_60000.pth`, you can execute the following scripts.
 ```text
 CUDA_VISIBLE_DEVICES=0 python scripts/inference.py \
 --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
@@ -65,7 +65,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py
 --start-from-checkpoint checkpoints/anoc/checkpoint_best.pth
 ```
 
-Similarly, one can use the tensorboard to monitor the performance and the training procedure. To check the specific parameters of the model on the validation, e.g., `checkpoint_120000.pth`, you can execute the following scripts.
+Similarly, one can use the tensorboard to monitor the performance and the training procedure. To check the specific parameters of the model on the validation set, e.g., `checkpoint_120000.pth`, you can execute the following scripts.
 ```text
 CUDA_VISIBLE_DEVICES=0 python scripts/inference_scst.py \
 --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
