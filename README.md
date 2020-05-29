@@ -20,19 +20,33 @@ Requirements
 2. Requirements for Tensorflow. We only use the tensorboard for visualization.
 3. Python 3.6+ (for most of our experiments)
 
+Datasets
+------------------
+Download the extra nocaps [dataset](https://drive.google.com/file/d/1puVmZN_UbDYas9m2c1cbBx7m9SMvgfTG/view?usp=sharing) that is not provided by [`nocaps`](https://github.com/nocaps-org/updown-baseline) and unzip it. (Remenber to download other documents by the [instruction](https://nocaps.org/updown-baseline/setup_dependencies.html))
+
+This extra human saliency data for `COCO` and `nocaps` dataset is extract from [Saliency Attentive Model](https://arxiv.org/pdf/1611.09571.pdf) and the detection results for `COCO` dataset are extracted by the [open image detector](https://github.com/nocaps-org/image-feature-extractors).
+
+
+
 ANOC
 ------------------
 The program can be executed by
 ```text
-CUDA_VISIBLE_DEVICES=0 python scripts/train.py --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
---checkpoint-every 1000 --gpu-ids 0 --serialization-dir checkpoints/anoc
+CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
+--config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
+--checkpoint-every 1000 \
+--gpu-ids 0 \
+--serialization-dir checkpoints/anoc
 ```
 
 If you would like to train with SCST, you can base on the previous best result and execute the following script
 ```text
-CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py --config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
---config-override OPTIM.BATCH_SIZE 50 OPTIM.LR 0.00005 OPTIM.NUM_ITERATIONS 210000 --checkpoint-every 3000 \
---gpu-ids 0 --serialization-dir checkpoints/anoc_scst \
+CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py 
+--config configs/updown_plus_cbs_saliency_nocaps_val.yaml \
+--config-override OPTIM.BATCH_SIZE 50 OPTIM.LR 0.00005 OPTIM.NUM_ITERATIONS 210000 \
+--checkpoint-every 3000 \
+--gpu-ids 0 \
+--serialization-dir checkpoints/anoc_scst \
 --start-from-checkpoint checkpoints/anoc/checkpoint_best.pth
 ```
 
