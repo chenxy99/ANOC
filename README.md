@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train_scst.py --config configs/updown_plus
 --start-from-checkpoint checkpoints/anoc/checkpoint_best.pth
 ```
 
-Results
+Results for `nocaps` validation set
 ------------------
 ### ANOC w/o SCST:
 <table>
