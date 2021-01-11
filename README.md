@@ -3,6 +3,7 @@ Attention for Novel Object Captioning (ANOC)
 
 This code implements the Attention for Novel Object Captioning (ANOC)
 
+<<<<<<< HEAD
 Reference
 ------------------
 If you use our code or data, please cite our paper:
@@ -10,6 +11,8 @@ If you use our code or data, please cite our paper:
 Anonymous submission for IJCAI 2021, paper ID 725.
 ```
 
+=======
+>>>>>>> 20a18062dae7d98da49e608b7b6ace9d6925b466
 Disclaimer
 ------------------
 We adopt the official implementation of the [`nocaps`](https://github.com/nocaps-org/updown-baseline) as a baseline model for novel object captioning. We use the bottom-up features provided in this repository. Please refer to these links for further README information.
