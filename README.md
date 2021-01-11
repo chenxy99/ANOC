@@ -3,7 +3,6 @@ Attention for Novel Object Captioning (ANOC)
 
 This code implements the Attention for Novel Object Captioning (ANOC)
 
-<<<<<<< HEAD
 Reference
 ------------------
 If you use our code or data, please cite our paper:
@@ -11,9 +10,6 @@ If you use our code or data, please cite our paper:
 Anonymous submission for IJCAI 2021, paper ID 725.
 ```
 
-=======
->>>>>>> 20a18062dae7d98da49e608b7b6ace9d6925b466
-Disclaimer
 ------------------
 We adopt the official implementation of the [`nocaps`](https://github.com/nocaps-org/updown-baseline) as a baseline model for novel object captioning. We use the bottom-up features provided in this repository. Please refer to these links for further README information.
 
@@ -28,8 +24,6 @@ Datasets
 Download the extra nocaps [dataset](https://drive.google.com/file/d/1puVmZN_UbDYas9m2c1cbBx7m9SMvgfTG/view?usp=sharing) that is not provided by [`nocaps`](https://github.com/nocaps-org/updown-baseline) and unzip it. (Remenber to download other documents by the [instruction](https://nocaps.org/updown-baseline/setup_dependencies.html))
 
 This extra human saliency data for `COCO` and `nocaps` dataset is extracted by [Saliency Attentive Model](https://arxiv.org/pdf/1611.09571.pdf) and the detection results for `COCO` dataset are extracted by the [open image detector](https://github.com/nocaps-org/image-feature-extractors).
-
-
 
 ANOC
 ------------------
