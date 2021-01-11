@@ -10,6 +10,8 @@ If you use our code or data, please cite our paper:
 Anonymous submission for IJCAI 2021, paper ID 725.
 ```
 
+## Disclaimer
+
 We adopt the official implementation of the [`nocaps`](https://github.com/nocaps-org/updown-baseline) as a baseline model for novel object captioning. We use the bottom-up features provided in this repository. Please refer to these links for further README information.
 
 Requirements
