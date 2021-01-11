@@ -7,7 +7,7 @@ Reference
 ------------------
 If you use our code or data, please cite our paper:
 ```text
-Anonymous submission for ECCV 2020, paper ID 865.
+Anonymous submission for IJCAI 2021, paper ID 725.
 ```
 
 Disclaimer
