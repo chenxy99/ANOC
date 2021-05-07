@@ -5,9 +5,14 @@ This code implements the Attention for Novel Object Captioning (ANOC)
 
 Reference
 ------------------
-If you use our code or data, please cite our paper:
+If you find the code useful in your research, please consider citing the paper.
 ```text
-Anonymous submission for IJCAI 2021, paper ID 725.
+@InProceedings{xianyu:2021:anoc,
+    author={Xianyu Chen and Ming Jiang and Qi Zhao},
+    title = {Leveraging Human Attention in Novel Object Captioning},
+    booktitle = {Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)},
+    year = {2021}
+}
 ```
 
 ## Disclaimer
