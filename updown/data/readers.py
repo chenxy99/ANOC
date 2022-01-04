@@ -144,7 +144,7 @@ class PenultimateFeaturesReader(object):
             # If loading all features in memory at once, keep a mapping of image id to features.
             for index in tqdm(range(penultimate_features_h5["image_id"].shape[0])):
                 self._map[penultimate_features_h5["image_id"][index]] \
-                    = penultimate_features_h5["attention_maps"][index]
+                    = penultimate_features_h5["penultimate_features"][index]
 
             penultimate_features_h5.close()
         else:
@@ -163,7 +163,7 @@ class PenultimateFeaturesReader(object):
             image_id_penultimate_features = self._map[image_id]
         else:
             index = self._map[image_id]
-            image_id_penultimate_features = self.penultimate_features_h5["attention_maps"][index]
+            image_id_penultimate_features = self.penultimate_features_h5["penultimate_features"][index]
 
         return image_id_penultimate_features
 
